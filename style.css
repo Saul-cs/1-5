@@ -1,0 +1,86 @@
+/* Estilo base do site */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+    color: white;
+    overflow: hidden;
+}
+
+/* Título Neon */
+.neon {
+    font-size: 2.5em;
+    color: #f40;
+    text-shadow: 0 0 5px #f40, 0 0 10px #f60, 0 0 20px #f80;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        text-shadow: 0 0 10px #f40, 0 0 20px #f60;
+    }
+    50% {
+        text-shadow: 0 0 20px #f60, 0 0 30px #f80;
+    }
+    100% {
+        text-shadow: 0 0 10px #f40, 0 0 20px #f60;
+    }
+}
+
+/* Caixa principal */
+.container {
+    text-align: center;
+    background: rgba(18, 18, 18, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    border: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+/* Instruções */
+.instructions {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Input */
+input {
+    padding: 10px;
+    width: 80%;
+    margin: 10px 0;
+    border: 2px solid #f40;
+    border-radius: 4px;
+    background-color: #222;
+    color: #f40;
+    font-size: 1em;
+    text-align: center;
+}
+
+/* Botão */
+button {
+    padding: 10px 20px;
+    background-color: #f40;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #b30000;
+}
+
+/* Mensagem de erro */
+.error {
+    color: #f40;
+    font-size: 1.2em;
+    margin-top: 15px;
+    text-shadow: 0 0 5px #f40;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asdfsadf</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            font-size: 3em;
+            animation: fadeInOut 7s ease-in-out forwards;
+        }
+        h2 {
+            font-size: 2em;
+            animation: fadeInOut 15s ease-in-out forwards;
+        }
+
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .content {
+            display: none;
+            text-align: center;
+        }
+
+        .content.show {
+            display: block;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        p {
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bem-vindo, Fhelipe!</h1>
+    <h2 style="color: red;">"Colete as dúvidas espalhadas pelos caminhos e transforme-as em mapas."</h2>
+    <div class="content">
+        <img src="imgs/FhelipeIMG.png" alt="Imagem Exemplo">
+        <h3>"Colete as dúvidas espalhadas pelos caminhos e transforme-as em mapas."</h3>
+    </div>
+
+    <script>
+        // Espera a animação terminar (4s) e então exibe o conteúdo
+        setTimeout(() => {
+            document.querySelector('.content').classList.add('show');
+            document.querySelector('h1').style.display = 'none'; // Esconde o título após a animação
+        }, 15000); // 4 segundos após o carregamento
+    </script>
+</body>
+</html>
