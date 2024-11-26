@@ -35,7 +35,7 @@ function verifyAccess() {
 
 // Função para tocar o som de aviso
 function playWarningSound() {
-    const audio = new Audio("audios/frase.mp3");
+    const audio = new Audio("frase.mp3");
     audio.play();
 }
 
